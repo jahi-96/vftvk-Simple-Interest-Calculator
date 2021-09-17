@@ -2,7 +2,7 @@ function compute()
 {
     var principal = document.getElementById("principal").value;
 	//Validation for principal amount
-	if(principal<0){
+	if(principal<=0 || principal == null ){
 		alert("Enter a positive number");
 		document.getElementById("principal").value="";
 		document.getElementById("principal").focus();
@@ -24,4 +24,3 @@ function updateRate()
     var rateval = document.getElementById("rate").value;
     document.getElementById("rate_val").innerText=rateval;
 }
-        
